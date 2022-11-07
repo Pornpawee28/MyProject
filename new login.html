@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In Now</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            font-style: normal;
+            text-transform: capitalize;
+            text-decoration: none;
+            viewport-fit: auto;
+        }
+
+        body {
+            min-height: 100%;
+            background-image: url(https://my-recipe-box-app.s3.us-east-2.amazonaws.com/assets/img/header.jpg);
+            background-size: 100%;
+            background-position: absolute;
+        }
+
+        form {
+            width: 500px; height: auto;
+            background-color: #ee7840;
+            border-radius: 30px;
+            margin: auto;
+            margin-top: 90px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        input[type=text] ,input[type=password] {
+            width: 50%;
+            padding: 20px 40px;
+            margin: auto;
+            display: block;
+            border-radius: 10px;
+            border: none;
+            background-color: #f0dac0;
+        }
+
+        button {
+            background-color: #5c5f30;
+            color: #f0dac0;
+            padding: 15px 20px;
+            margin: 15px auto;
+            border: 0px;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 80%;
+            font-size: 20px;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .cancelbt {
+            width: 30%;
+            padding: 10px 20px;
+            background-color: #E0144C;
+        }
+
+        .avatar{
+            margin: 25px 0 20px 0;
+        }
+
+        img.avatar {
+            width: 40%;
+            border-radius: 50%;
+        }
+
+        .input {
+            padding: 20px;
+        }
+
+        span.forgot {
+            float: right;
+            padding-top: 25px;
+            padding-right: 15px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <form action="action_page.php" method="post">
+        <h2>Log In</h2>
+        <div class="avatar">
+            <img src="https://wp-d.org/wp-content/uploads/2014/02/WPD-Salmon_avatar_1393039702-320x320.png" 
+            alt="avatar">
+        </div>
+
+        <div class="Input">
+            <label for="user"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="user" required>
+
+            <label for="pass"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="pass" required>
+
+            <button type="submit" class="click">Log In</button>
+            
+        </div>
+
+        <div>
+            <label>
+                <input type="checkbox" class="checkbox" name="remember"> Remember Me
+            </label>
+        </div>
+
+        <div class="regis">
+            <span class="register">You're new here? <a href="Register.html">Register</a> now!</span>
+        </div>
+
+        <div class="contain">
+            <button type="button" class="cancelbt">Cancel</button>
+            <span class="forgot">Forgot <a href="#">password</a>?</span>
+        </div>
+    </form>
+</body>
+</html>
